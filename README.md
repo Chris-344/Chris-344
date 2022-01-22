@@ -1,7 +1,6 @@
 👋 Hi, I’m Chris
 <br>👀 I’m interested in learning frontend development
-<br>🌱 I’m currently learning javascript
-<br>💞️ I’m looking to collaborate on ...
+<br>🌱 I’m currently learning javascript 
 <br>📫 My discord is<a href=#> blank for now
 
 <!---
