@@ -1,0 +1,61 @@
+/*HTML*/
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React + TypeScript + Replit</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  </body>
+</html>
+
+/* Index.jsx */
+
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
+)
+/*App.js*/
+import React from 'react'
+import './App.css'
+
+export default function App() {
+  const[count,setCount]=React.useState(0)
+  function add(){
+    setCount(n=>n+1)
+  }
+  function subtract(){
+    setCount(n=>n-1)
+  }
+  function reset(){
+    setCount(0)
+  }
+  return (
+    <main>
+      <h1>{count}</h1>
+      <button onClick={add}>Add</button>
+      <button onClick={reset}>Reset</button>
+      <button onClick={subtract}>Subtract</button>
+    </main>
+  )
+}
+/*App.css*/
+body{
+  text-align:center;
+  color:white;
+  background-color:blue;
+}
+button{
+  margin:5px
+}
